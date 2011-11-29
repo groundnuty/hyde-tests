@@ -1,0 +1,21 @@
+content_menu_css: navigation-main-level2
+tikz_menu_css: navigation-sec
+tikz_menu:
+        -
+          name: Examples
+          description: Examples
+          css_class: home
+          type: node
+          url: tikz/examples
+        -
+          name: Resources
+          description: Resources
+          css_class: home
+          type: page
+          url: tikz/resources.html
+        -
+          name: Builds
+          description: Builds
+          css_class: home
+          type: page
+          url: tikz/builds.html

@@ -1,0 +1,216 @@
+/* Navigation
+
+#navigation-main {padding-top:7px; }
+#navigation-sec-wrapper{background-color:white;}
+#navigation-sec-wrapper .container_12 {
+    background: url(img/fract0.png) bottom no-repeat;
+
+}
+
+
+#navigation-main {list-style: none;padding-bottom : 7px;}
+#navigation-main li, #navigation-sec li{display: inline;padding: 3px; }
+
+#navigation-mini {text-align: right;}
+.nav-sec #navigation-main a {color:gray; }
+
+
+
+#navigation-main a:hover {color:gray; border-bottom:none;background: url(img/spike.png) bottom center no-repeat ; padding-bottom : 29px;}
+
+
+.tikz #nav-tikz a, .community #nav-community a,.articles #nav-articles a,.weblog #nav-weblog a{
+    background: url(img/spike.png) bottom center no-repeat ;
+    padding-bottom : 29px;
+}
+
+#tikz-builds #nav-tikz-builds a, #tikz-resources #nav-tikz-resources a, .tikz-examples #nav-tikz-examples a{
+    background-color: #D1D7D9;
+
+    }
+.level3 #navigation-main a, .level2 #navigation-main a {color:gray; }
+*/
+
+@base-url: "/media/css/";
+@site_width: 960px;
+
+@headerLogoWidth:55%;
+@headerminiMenuWidth:100%-@headerLogoWidth ;
+
+* {
+
+    font-family: Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    text-decoration:inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html {
+    width: @site_width ;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+
+    a {
+        color: #6A3F3C;
+        text-decoration: none;
+    }
+    a:visited {
+        color: #481616;
+    }
+    a:hover {
+        border-bottom: 1px solid;
+    }
+
+    header {
+        width: @site_width ;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15px;
+        position: relative;
+        background-color:white;
+
+        #headLogo {
+            float: left;
+            width: @headerLogoWidth;
+            background-color:yellow;
+        }
+
+        #navigation-mini {
+            float: left;
+            text-align: right;
+            vertical-align: baseline;
+            width: @headerminiMenuWidth;
+            background-color:green;
+        }
+        ul li {
+            display: inline;
+            padding: 3px;
+            font-weight:bold;
+        }
+        h2 {
+            margin:0;
+            padding:0 5px 0 0;
+            float:left;
+        }
+        p {
+            margin:0;
+            line-height:45px;
+            color:#4B5255;
+        }
+        a:hover {
+            border-bottom:none;
+        }
+
+        .navigation-main {
+            clear:both;
+            background: url("/media/css/img/fract1.png") bottom no-repeat;
+            height:65px;
+            line-height:55px;
+            li {
+                margin-left: 30px;
+            }
+            a:hover {
+                color:gray;
+                border-bottom:none;
+                background: url("/media/css/img/spike.png") bottom center no-repeat ;
+                padding-bottom : 29px;
+
+            }
+
+
+
+        }
+        .navigation-sec {
+            padding-top:13px;
+            padding-bottom:13px;
+            ul{
+                margin-left:20px;
+            }
+            li{
+                font-style: normal;
+                font-variant: normal;
+                font-weight: normal;
+                color: #481616;
+                padding:7px 17px;
+            }
+        }
+        .navigation-main-level2 {
+            .navigation-main ;
+            background: url("/media/css/img/fract2.png") bottom no-repeat;
+            a {
+                color:gray
+            }
+        }
+        .navigation-main-level3 {
+            .navigation-main-level2 ;
+            background: url("/media/css/img/fract3.png") bottom no-repeat;
+        }
+        .navigation-sec-level2 {
+            .navigation-sec ;
+            .liactive {
+               background-color: #D1D7D9;
+            }
+        }
+        .navigation-mainn-level3 {background: white url(img/fract3.png) bottom no-repeat;}
+
+    }
+
+    #content {
+        background-color: orange;
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+        margin-left: 10px;
+        margin-right: 10px;
+        float: left;
+    }
+    body {
+        font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+        height: 100%;
+    }
+
+    #footer-black-wrapper {
+        display:block;
+        width: 100%;
+        position:absolute;
+        left:0;
+        background-color: black;
+        footer {
+            color: white; padding: 1em 0;
+            width: @site_width ;
+            margin-left: auto;
+            margin-right: auto;
+            a {
+                color: white;
+            }
+        }
+    }
+
+}
+
+
+#main-container{
+ min-height: 100%;
+}
+
+ol, ul {
+    list-style: none
+}
+
+
+/* Header */
+
+
+
+/* Footer styles */
+
+
+
+

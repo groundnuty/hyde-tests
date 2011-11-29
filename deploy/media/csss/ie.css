@@ -1,0 +1,5 @@
+.tikz #nav-tikz a, .community #nav-community a,.articles #nav-articles a,.weblog #nav-weblog a{
+    padding-bottom : 28px;
+}
+
+#navigation-main a:hover {padding-bottom : 28px;}
